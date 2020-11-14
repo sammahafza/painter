@@ -1,0 +1,26 @@
+* {
+	box-sizing: initial;
+}
+
+canvas {
+  border-radius: 12px;
+  border: 1px solid #000000;
+}
+
+.colors_cont {
+	text-align: center;
+	background-color: #e6e6e6;
+}
+
+.colors_btn {
+	width: 35%;
+	padding: 10px;
+}
+
+.color_selected {
+	border: 1px solid #000000;
+}
+
+.btn_selected {
+	background: #1cff00
+}
