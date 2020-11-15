@@ -165,7 +165,7 @@ function resetAll() {
 
 function draw() {
 
-    stroke(0);
+    stroke(color(current_color));
 	
 	strokeWeight(slider.value());
     
@@ -190,7 +190,7 @@ function draw() {
 }
 function mousePressed() {
 	
-	if (mouseY > 100 && mouseX < width)
+	if (mouseY > 100 && mouseX < width - 20)
 	{
 		if (mode == 0) {
 			l.x1 = mouseX;
@@ -215,7 +215,7 @@ function mousePressed() {
 }
 
 function mouseClicked() {
-	if (mouseY > 100 && mouseX < width)
+	if (mouseY > 100 && mouseX < width - 20)
 	{
 		if (mode == 4)
 		{
@@ -246,7 +246,7 @@ function mouseReleased() {
 
 function mouseDragged() {
 	
-	if (mouseY > 100) {
+	if (mouseY > 100 && mouseX < width - 20) {
 	   if (mode == 0) {	
 			l.x2 = mouseX;
 			l.y2 = mouseY;
